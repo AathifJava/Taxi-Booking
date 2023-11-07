@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+  <title>New Teach | Manage Products</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="/img/taxi.svg" />
+  <link rel="stylesheet" href="/css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/css/style.css" />
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-12">
+      <div class="row">
+
+        <!-- nav -->
+        <div class="col-12 col-lg-2 rounded border border-primary bg-dark">
+          <div class="row">
+
+            <div class="col-12">
+              <div class="row">
+
+                <div class="col-12 mt-5">
+                  <h4 class="text-white">Travel</h4>
+                </div>
+
+                <div class="col-12 logo"></div>
+
+                <div class="col-12 mt-5">
+                  <h4 class="text-white">Aathif</h4>
+                  <hr class="border border-1 border-white" />
+                </div>
+
+                <div class="nav flex-column nav-pills me-3 mt-3" role="tablist" aria-orientation="vertical">
+                  <nav class="nav flex-column">
+                    <a class="nav-link fs-5 text-white" href="#"><i class="bi bi-house-fill text-white"></i> Dashboard</a>
+                    <a class="nav-link active fs-5 text-white" aria-current="page" href="#"><i class="bi bi-screwdriver text-white"></i> Manage Drivers</a>
+                    <a class="nav-link fs-5 text-white" href="#"><i class="bi bi-car-front-fill text-white"></i> Ongoing Trips</a>
+                    <a class="nav-link fs-5 text-white" href="#"><i class="bi bi-credit-card-fill text-white"></i> Trip Payments</a>
+                    <a class="nav-link fs-5 text-white" href="#"><i class="bi bi-hourglass-split text-white"></i> Trip History</a>
+                    <a class="nav-link fs-5 text-white" href="#"><i class="bi bi-x-octagon-fill text-white"></i> Cancelled Trips</a>
+                    <a class="nav-link fs-5 text-white" href="#"><i class="bi bi-people-fill text-white"></i> Customer</a>
+                    <a class="nav-link fs-5 text-white" href="#"><i class="bi bi-chat-fill text-white"></i> Message</a>
+                    <a class="nav-link fs-5 text-white" href="#"><i class="bi bi-gear-fill text-white"></i> Setting</a>
+                    <a class="nav-link fs-5 text-white" href="#"><i class="bi bi-box-arrow-right text-white"></i> Log Out</a>
+                  </nav>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- nav -->
+
+        <!-- products -->
+        <div class="col-12 col-lg-10">
+          <div class="row">
+
+            <div class="col-12 mx-auto text-white text-center fw-bold mb-3 mt-2 abc">
+              <h2 class="text-dark mt-4 fw-bold">Manage All Drivers</h2>
+
+              <div class="col-12 mt-3">
+                <div class="row">
+                  <div class="col-12 col-lg-7 mx-auto mb-3 mt-3">
+                    <div class="row">
+                      <div class="col-9">
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col-3 d-grid">
+                        <button class="btn btn-warning">Search User</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-11 mx-auto mt-3">
+                <div class="row">
+                  <div class="col-2 col-lg-1 bg-transparent border border-1 border-dark py-2 text-end">
+                    <span class="fs-6 fw-bold text-dark">#</span>
+                  </div>
+                  <div class="col-2 col-lg-2  bg-transparent border border-1 border-dark py-2 d-none d-lg-block">
+                    <span class="fs-6 fw-bold text-dark">Driver Details</span>
+                  </div>
+                  <div class="col-3 col-lg-2 bg-transparent border border-1 border-dark py-2">
+                    <span class="fs-6 fw-bold text-dark">Contact Details</span>
+                  </div>
+                  <div class="col-3 col-lg-2 bg-transparent border border-1 border-dark py-2 d-lg-block">
+                    <span class="fs-6 fw-bold text-dark">Vehicle Details</span>
+                  </div>
+                  <div class="col-2 bg-transparent border border-1 border-dark py-2 d-none d-lg-block">
+                    <span class="fs-6 fw-bold text-dark">Package</span>
+                  </div>
+                  <div class="col-2 bg-transparent border border-1 border-dark py-2 d-none d-lg-block">
+                    <span class="fs-6 fw-bold text-dark">Account</span>
+                  </div>
+                  <div class="col-4 col-lg-1 bg-transparent border border-1 border-dark">
+                    <span class="fs-6 fw-bold text-dark">Option</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-11 mx-auto">
+                <div class="row">
+                  <div class="col-2 col-lg-1 bg-transparent border border-1 border-dark py-2 text-end">
+                    <span class="fs-6 fw-bold text-dark">1</span>
+                  </div>
+                  <div class="col-2 col-lg-2 bg-transparent border border-1 border-dark py-2 d-none d-lg-block">
+                    <img src="img/shop.png" style="height: 40px;" />
+                  </div>
+                  <div class="col-3 col-lg-2 bg-transparent border border-1 border-dark py-2">
+                    <span class="fs-6 fw-bold text-dark">Rice cooker</span>
+                  </div>
+                  <div class="col-3 col-lg-2 bg-transparent border border-1 border-dark py-2 d-lg-block">
+                    <span class="fs-6 fw-bold text-dark">15000 .00</span>
+                  </div>
+                  <div class="col-2 bg-transparent border border-1 border-dark py-2 d-none d-lg-block">
+                    <span class="fs-6 fw-bold text-dark">12</span>
+                  </div>
+                  <div class="col-2 bg-transparent border border-1 border-dark py-2 d-none d-lg-block">
+                    <span class="fs-6 fw-bold text-dark">2022-08-08</span>
+                  </div>
+                  <div class="col-4 col-lg-1 bg-transparent border border-1 py-2 border-dark d-grid">
+                    <button class="btn btn-success">Unblock</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- page -->
+              <div class="col-12 my-4 text-center">
+                <div class="pagination">
+                  <a href="#">&laquo;</a>
+                  <a href="#">1</a>
+                  <a href="#" class="active">2</a>
+                  <a href="#">3</a>
+                  <a href="#">4</a>
+                  <a href="#">5</a>
+                  <a href="#">6</a>
+                  <a href="#">&raquo;</a>
+                </div>
+              </div>
+              <!-- page -->
+
+            </div>
+
+          </div>
+        </div>
+        <!-- products -->
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+
+</html>
